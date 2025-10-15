@@ -1,0 +1,27 @@
+error,stat description,unitDisplay,Swordsman,Summoner,Spearer,Shielder,Sporager,Magi,Macer,Healer,Archer,Imp,Bannerer,Spawner
+unit error,none,,Stability is built upon the bodies of expendable stoic types with pointy sticks. Worth noting stoicism maybe replaced with idiocy.,Armies of Darkness await in shadow for any chance to slip into the mortal world. Powers great and terrible will conquer and destroy everything in their path once let loose - however goblins can only open up about a yeh-big hole in space-time.,A spear is generic and uninspired. Yet extremely effective. Who knew that pointy object is beat by longer pointy sticks.,A great defense is a great offence is a great defence is a great offence is a great defence is a great offence is a great offence is a great defence is a...,"Without child labour where would we be? Moral, but behind the other less moral goblin warmachines.","One of the only units that knows adding an ""er"" to the end of thing they use, or a thing they do isn't actually representative of their identity as an individual.",Hits idiots with heavy pokey ball on end of stick.,"God is dead, we killed him with mortal wounds to the neck and abdomen. But not before god spoke to many young impressionable goblins about the word ""Heal"".","Don't come close to me! Eww, gross stop! Go away ugly dumb idiot. You are small and stupid and smelly. I can smell you all the way over here actually. Disgusting don't touch me.","actually a paid actor, with cletherd use of cg and money anything is possible","Arise, arise, Goblins of Goblinkind!Fell deeds awake: fire and slaughter!Spear shall be shaken, shield be splintered,a sword-day, a red day, ere the sun rises!Kill now! Kill now! Kill now for Goblinkind!"
+health,A\y burdens,2,60,40,60,100,40,40,80,40,60,1,20,120
+cost,something to ease the hunger,1,3,9,5,9,3,9,7,7,7,0,2,0
+range,hurley twirlies down over yonder,1,1,1,1.6,1,0,3,1,5,3,1,0,0
+speed,good shoes take you to good places,9,1,0.25,1,1,2,0.5,1,.6,.6,1.4,.1,0
+attackspeed,someFillerText something will go here,9,1,1,1,1,0,.5,1,0,1,1,20,0
+damage,someFillerText something will go here,9,10,10,10,10,0,10,30,0,10,10,20,0
+armour,someFillerText something will go here,9,0,0,0,8,0,0,0,0,0,0,0,0
+block,someFillerText something will go here,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+crit,someFillerText something will go here,0,0,0,0,0,0,0,20,0,0,0,0,0,0,0,
+summonspeed,nether world hear my prayer; grant me an army of shadow and flame ,9,0,6,0,0,0,0,0,0,0,0,20,0
+summonhealth,nether world hear my prayer; give me your strongest soldiers for my hardest battle,9,0,25,0,0,0,0,0,0,0,0,20,0
+summondamage,nether world hear my prayer; give me your drunkest drivers for the sharpest corners,9,0,10,0,0,0,0,0,0,0,0,20,0
+capacity,trusty pack can carry many things for when youre in a pinch,9,0,0,0,0,3,0,0,0,0,0,20,0
+sporespreading,you reap what you sow ,9,0,0,0,0,1,0,0,0,0,0,20,0
+yield,with great care a gentle touch ,9,0,0,0,0,1,0,0,0,0,0,20,0
+splash,kachow,9,0,0,0,0,0,1,0,0,0,0,20,0
+healamount,someFillerText something will go here,9,0,0,0,0,0,0,0,7,0,0,20,0
+healspeed,someFillerText something will go here,9,0,0,0,0,0,0,0,.5,0,0,20,0
+slow,someFillerText something will go here,9,0,0,0,0,0,0,0,0,1,0,20,0
+unlock,someFillerText something will go here,0,0,60,20,60,20,60,40,40,40,0,00,0,
+mushroomrange,someFillerText something will go here,9,0,900,500,900,10,900,700,700,700,0,20,0
+bannerrange,someFillerText something will go here,00,0,0,00,0,0,0,00,0,0,0,0,00,0,0,0,0
+attackspeedup,someFillerText something will go here,0,0,0,0,0,0,0,0,0,0,0,0,0
+armourup,someFillerText something will go here,0,0,0,0,0,0,0,0,0,0,0,0,0
+attackup,someFillerText something will go here,0,0,0,0,0,0,0,0,0,0,0,0,0

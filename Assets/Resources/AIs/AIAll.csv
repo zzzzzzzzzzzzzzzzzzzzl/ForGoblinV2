@@ -1,0 +1,13 @@
+,Swordsman,Spearer,Shielder,Healer,Magi,Summoner,Bannerer,Archer,Macer,Sporager
+meta,gatherRate=3,material=m1,statMulti=2.3,startingMushroom=20
+null,1,1,1,0,0,1,0,0,1,1
+Swordsman,1,1,1,1,1,1,1,1,1,1
+Spearer,1,1,1,1,1,1,1,1,1,1
+Shielder,1,1,1,1,1,1,1,1,1,1
+Healer,1,1,1,1,1,1,1,1,1,1
+Magi,1,1,1,1,1,1,1,1,1,1
+Summoner,1,1,1,1,1,1,1,1,1,1
+Bannerer,1,1,1,1,1,1,1,1,1,1
+Archer,1,1,1,1,1,1,1,1,1,1
+Macer,1,1,1,1,1,1,1,1,1,1
+Sporager,1,1,1,1,1,1,1,1,1,1

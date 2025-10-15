@@ -1,0 +1,194 @@
+{
+    "name": "playerControls",
+    "maps": [
+        {
+            "name": "GamePlay",
+            "id": "a803edbb-e399-4730-a671-abb8b78f1413",
+            "actions": [
+                {
+                    "name": "SpawnSwordsMan",
+                    "type": "Button",
+                    "id": "c7484cdc-f77b-4f49-8b67-1d65049ae7e0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SpawnMagi",
+                    "type": "Button",
+                    "id": "67481d92-f632-41c9-b738-4200d0417aa0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SpawnMacer",
+                    "type": "Button",
+                    "id": "fb15fedc-7e11-4c13-99ea-46b909e57dec",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SpawnSpearer",
+                    "type": "Button",
+                    "id": "496e29fc-2958-4ae5-bcd6-8b40dd46f8a8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SpawnSummoner",
+                    "type": "Button",
+                    "id": "dc45dc16-a148-4256-af36-60e0d40b424c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SpawnShielder",
+                    "type": "Button",
+                    "id": "f318e0df-aa74-46bb-89eb-f08e16c7ec87",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SpawnHealer",
+                    "type": "Button",
+                    "id": "5dd27ad5-998c-4673-b3f9-a5a3b3cf39b0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SpawnArcher",
+                    "type": "Button",
+                    "id": "4e64cbff-e39f-47e2-a53e-c52373a3beb6",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SpawnMushroomer",
+                    "type": "Button",
+                    "id": "d76fba25-9e19-4dd0-91d7-77ed8c522981",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "12e7a91a-6fd7-4fa3-b2aa-b58c817368cc",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpawnSwordsMan",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5c4067e0-7fcb-44b6-bcfb-357823a2f2b4",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpawnMagi",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0a8fca34-af93-4796-8773-c17f1d9d4fec",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpawnMacer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "772147fc-d09c-4dd3-ac93-09803ccaf2c6",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpawnSpearer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "455a4e9e-7c1f-4568-bfd5-7d6027f9f63c",
+                    "path": "<Keyboard>/5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpawnSummoner",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ac62c76b-dcaa-40bc-870b-2dcfc42cb157",
+                    "path": "<Keyboard>/6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpawnShielder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f37ea110-7354-46c7-b7c8-0cfbece785b2",
+                    "path": "<Keyboard>/7",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpawnHealer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8d8451c8-b51a-4709-9799-278fa28f7c4e",
+                    "path": "<Keyboard>/8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpawnArcher",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e6b74311-e46e-4b72-980f-1f9aedae7a2c",
+                    "path": "<Keyboard>/9",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpawnMushroomer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
