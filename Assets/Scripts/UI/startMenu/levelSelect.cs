@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -34,14 +33,15 @@ public class levelSelect : UIMaterialManager
     }
     protected override void Start()
     {
-        base.Start();
-        loadAIPannels();
+        base.Start();//inherits from manager to set materials
+        loadAIPannels();//instantiate the ai pannels// we could probably make the prefab the pannel instead//
         leftButton.onClick.AddListener(() => { incrementAI(-1); });
         rightButton.onClick.AddListener(() => { incrementAI(1); });
     }
 
     void loadAIPannels()//
     {
+        ais= ResourceLoader.AIPrefabs.Values.ToList();
         foreach (aiType ai in ais.Select(g => g.GetComponent<aiType>()))
         {
             GameObject portraitGO = Instantiate(portraitPrefab, layout);
@@ -55,6 +55,7 @@ public class levelSelect : UIMaterialManager
                 selectAI(ai);
             });
             levelIcons.Add(portraitGO);
+            
         }
     }
     void selectAI(aiType ai)

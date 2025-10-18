@@ -27,7 +27,7 @@ public class UnitStatToolTip : ToolTipBase
         {
             foreach (KeyValuePair<string, float> kvp in unitStatsData.stats)
             {
-            if (kvp.Key != "slowDuration" && kvp.Key != "forageRange" && kvp.Key != "summonAttackSpeed" && kvp.Key != "summonSpeed")
+            if (kvp.Key != "slowDuration" && kvp.Key != "forageRange" && kvp.Key != "summonAttackSpeed" && kvp.Key != "summonSpeed"&& kvp.Key != "cost")
                 {
                     rows[kvp.Key].statValue = kvp.Value;
                     rows[kvp.Key].gameObject.SetActive(kvp.Value > 0);
@@ -43,7 +43,7 @@ public class UnitStatToolTip : ToolTipBase
         overlays.Add(top.GetComponent<Image>());
         foreach (string stat in unitData.statNames)
         {
-            if (stat != "slowDuration" && stat != "forageRange" && stat != "summonAttackSpeed" && stat != "summonSpeed")
+            if (stat != "slowDuration" && stat != "forageRange" && stat != "summonAttackSpeed" && stat != "summonSpeed"&& stat != "cost")
             {
                 UnitStatToolTipRow row = Instantiate(rowPrefab, layout.transform).GetComponent<UnitStatToolTipRow>();
                 rows.Add(stat, row);

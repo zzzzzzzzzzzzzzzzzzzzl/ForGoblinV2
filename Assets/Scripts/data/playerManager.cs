@@ -64,12 +64,4 @@ public class playerManager : MonoBehaviour
         CurrencyUI.instance.setUI(playerData.gatherRate, playerData.mushroom, playerData.crystal);
 
     }
-    void setMaterial()
-    {
-        foreach (Image i in UIMaterialManager.overlays)
-        {
-            i.material = material;
-            if(spawner.spriteRenderer!=null)spawner.spriteRenderer.material = material;
-        }
-    }
 }

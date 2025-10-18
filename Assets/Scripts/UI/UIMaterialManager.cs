@@ -11,7 +11,6 @@ public class UIMaterialManager : MonoBehaviour
     [SerializeField]
     public static void setMaterial()
     {
-        Debug.Log(ResourceLoader.materials.Count);
         material = ResourceLoader.materials["UnitColor"];
     }
     IEnumerator waitForMaterials()
@@ -28,7 +27,6 @@ public class UIMaterialManager : MonoBehaviour
             StartCoroutine(waitForMaterials());
             init = true;
         }
-        Debug.Log(material);
         overlays.Add(overlay);
         if (material != null) overlay.material = material;
 

@@ -26,6 +26,6 @@ public class UnitStatsUI : ToolTipAppearOnHover
     {
         float xScale = currentHealth > 0 ? currentHealth / baseHealth : 0;
         healthBar.transform.localScale = new Vector3(xScale, healthBar.transform.localScale.y, 1);
-        rows["health"].TMP.text = $"health:{currentHealth}";
+        // rows["health"].TMP.text = $"health:{currentHealth}";
     }
 }

@@ -76,7 +76,7 @@ public class Entity : MonoBehaviour
     {
         animator.Play("die");
     }
-    protected virtual void Awake()
+    protected virtual void Start()
     {
         try
         {
@@ -91,7 +91,6 @@ public class Entity : MonoBehaviour
             Debug.LogError($"{entityType} invalid key for unitStats ");
         }
 
-        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
         material = playerManager.playerManagers[team].material;
 
@@ -102,9 +101,9 @@ public class Entity : MonoBehaviour
         stateManager = gameObject.AddComponent<StateManager>();
         if (entityType != "Spawner") spriteRenderer.sortingOrder = UnityEngine.Random.Range(0, 10);
     }
-    protected virtual void Start()
+    protected virtual void Awake()
     {
-
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 }
 
