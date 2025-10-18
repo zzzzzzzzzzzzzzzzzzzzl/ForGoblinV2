@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class Agent : playerManager
 {
-    public aiType aitype;
-    public Material mat;
     float timePassed = 0;
     protected override void Awake()
     {
@@ -18,13 +16,13 @@ public class Agent : playerManager
             spawner.spawnUnit("Swordsman");
         }
     }
-    public void setAi()
+    protected override void init()
     {
-        aitype = aiType.selected;
-        material = aitype.material;
+        Debug.Log(aiType.selected);
+        material = aiType.selected.material;
 
         spawner.material = material;
         spawner.spriteRenderer.material = material;
-        playerData.Upgrades = new(aitype.baseUpgrades);
+        playerData.Upgrades = new(aiType.selected.baseUpgrades);
     }
 }

@@ -27,6 +27,8 @@ public class ResourceLoader : MonoBehaviour
       statIcons = loadFolder<Sprite>("StatIcons");
       materials = loadFolder<Material>("Materials");
       AIPrefabs = loadFolder<GameObject>("AIPrefabs");
+
+      aiType.selected = AIPrefabs["aiPrefab"].GetComponent<aiType>();
     }
     ResourcesLoaded = true;
   }

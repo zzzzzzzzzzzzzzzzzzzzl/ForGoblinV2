@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9130196915560600476, guid: 7899801fe94f0fa4ba145347c642bda0, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 61f8838dd7a599c45918e4a3725cb866, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -457,9 +461,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawner: {fileID: 1319595430}
   team: -1
-  _material: {fileID: 2100000, guid: b3e92091d64aea240b74564df0eecf21, type: 2}
+  _material: {fileID: 0}
   timer: {fileID: 0}
-  mat: {fileID: 0}
 --- !u!4 &121341128
 Transform:
   m_ObjectHideFlags: 0
@@ -507,7 +510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawner: {fileID: 0}
   team: 0
-  _material: {fileID: 2100000, guid: 48485fde3640cee1e9565305ee9c2067, type: 2}
+  _material: {fileID: 0}
   timer: {fileID: 0}
 --- !u!4 &193536403
 Transform:
@@ -2867,7 +2870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawner: {fileID: 1505133352}
   team: 1
-  _material: {fileID: 2100000, guid: 86b76d98c10a75249b18fbac12c4ca6c, type: 2}
+  _material: {fileID: 0}
   timer: {fileID: 0}
 --- !u!4 &2024760844
 Transform:

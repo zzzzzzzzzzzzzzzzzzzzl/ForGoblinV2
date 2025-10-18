@@ -7,14 +7,13 @@ public class playerManager : MonoBehaviour
     PlayerInputActions playerInputActions;
     public Spawner spawner;
     public int team;
+    public static Dictionary<int, playerManager> playerManagers = new();
     public Material _material;
     public Material material
     {
         get => _material; set
         {
             _material = value;
-            // setMaterial();
-            UIMaterialManager.updateOverlays();
         }
     }
     [HideInInspector]
@@ -33,20 +32,19 @@ public class playerManager : MonoBehaviour
             UpgradeUI.instance.setRows(_selectedUnit);
         }
     }
-    public static Dictionary<int, playerManager> playerManagers = new();
 
     protected virtual void Awake()
     {
-        material = _material;//just to trigger the get set
         playerManagers.Add(team, this);
         timer = gameObject.AddComponent<mushroomTimer>();
         timer.playerData = playerData;
-        spawner.init( team);
-        if (team == 1) initTeam1();
+        spawner.init(team);
+        init();
     }
-    void initTeam1()
+    protected virtual void init()
     {
         setUI();
+        spawner.material = UIMaterialManager.material;
     }
     protected virtual void Update()
     {

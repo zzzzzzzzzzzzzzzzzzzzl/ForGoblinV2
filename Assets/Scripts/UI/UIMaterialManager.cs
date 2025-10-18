@@ -24,7 +24,10 @@ public class UIMaterialManager : MonoBehaviour
     {
         if (!init)
         {
-            StartCoroutine(waitForMaterials());
+            setMaterial();
+            updateOverlays();
+
+            // StartCoroutine(waitForMaterials());
             init = true;
         }
         overlays.Add(overlay);

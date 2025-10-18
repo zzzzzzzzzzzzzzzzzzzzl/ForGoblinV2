@@ -8,7 +8,6 @@ public class Spawner : Entity
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         this.team = team;
-        material = playerManager.playerManagers[team].material;
         Entites[team].Add(this);
     }
     protected override void Start()

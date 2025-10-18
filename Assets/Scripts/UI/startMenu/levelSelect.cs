@@ -2,18 +2,20 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class levelSelect : UIMaterialManager
 {
     public GameObject portraitPrefab;
-    public List<GameObject> ais = new();//have a manager class for these just temp setup
-    public List<GameObject> levelIcons = new();
+    List<GameObject> ais = new();//have a manager class for these just temp setup
+    List<GameObject> levelIcons = new();
     public Transform layout;
     public RectTransform scrollRect;
     public RectTransform viewPort;
     public Button leftButton;
     public Button rightButton;
+    public Button startButton;
     int _selectedIDX = 0;
     Vector3 targetPos;
     public int selectedIDX//make the idx wrap around when it goes out of bounds
@@ -37,11 +39,13 @@ public class levelSelect : UIMaterialManager
         loadAIPannels();//instantiate the ai pannels// we could probably make the prefab the pannel instead//
         leftButton.onClick.AddListener(() => { incrementAI(-1); });
         rightButton.onClick.AddListener(() => { incrementAI(1); });
+        startButton.onClick.AddListener(() => { loadGame(); });
+        aiType.selected=ais[0].GetComponent<aiType>();
     }
 
     void loadAIPannels()//
     {
-        ais= ResourceLoader.AIPrefabs.Values.ToList();
+        ais = ResourceLoader.AIPrefabs.Values.ToList();
         foreach (aiType ai in ais.Select(g => g.GetComponent<aiType>()))
         {
             GameObject portraitGO = Instantiate(portraitPrefab, layout);
@@ -55,7 +59,7 @@ public class levelSelect : UIMaterialManager
                 selectAI(ai);
             });
             levelIcons.Add(portraitGO);
-            
+
         }
     }
     void selectAI(aiType ai)
@@ -63,6 +67,7 @@ public class levelSelect : UIMaterialManager
         selectedIDX = ais.IndexOf(ai.gameObject);
         targetPos = scrollRect.transform.position - (levelIcons[selectedIDX].transform.position - viewPort.transform.position);
         ellapsedFrames = 0;
+        aiType.selected = ai;
     }
     void incrementAI(int dir)
     {
@@ -81,5 +86,9 @@ public class levelSelect : UIMaterialManager
                 ellapsedFrames = 0;
             }
         }
+    }
+    void loadGame()
+    {
+        SceneManager.LoadScene("game");
     }
 }
