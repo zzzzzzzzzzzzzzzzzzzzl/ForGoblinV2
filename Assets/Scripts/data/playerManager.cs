@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class playerManager : MonoBehaviour
 {
@@ -44,11 +43,11 @@ public class playerManager : MonoBehaviour
     protected virtual void init()
     {
         setUI();
+        material= UIMaterialManager.material;
         spawner.material = UIMaterialManager.material;
     }
     protected virtual void Update()
     {
-
     }
     void setUI()
     {
@@ -60,6 +59,5 @@ public class playerManager : MonoBehaviour
         playerInputActions.playerManager = this;
 
         CurrencyUI.instance.setUI(playerData.gatherRate, playerData.mushroom, playerData.crystal);
-
     }
 }

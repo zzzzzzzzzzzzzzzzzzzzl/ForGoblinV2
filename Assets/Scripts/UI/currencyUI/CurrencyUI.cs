@@ -13,8 +13,9 @@ public class CurrencyUI : UIMaterialManager
     public Button upgradeGatherRate;
     ToolTipAppearOnHover gatherRatePriceOnHover;
     PlayerData playerData;
-    void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         instance = this;
     }
     public void setUI(float gatherRate, int mushroomCount, int crystalJuice)

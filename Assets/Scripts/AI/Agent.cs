@@ -20,9 +20,7 @@ public class Agent : playerManager
     {
         Debug.Log(aiType.selected);
         material = aiType.selected.material;
-
         spawner.material = material;
-        spawner.spriteRenderer.material = material;
         playerData.Upgrades = new(aiType.selected.baseUpgrades);
     }
 }
