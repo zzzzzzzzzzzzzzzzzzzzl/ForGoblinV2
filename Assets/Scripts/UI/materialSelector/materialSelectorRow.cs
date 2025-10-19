@@ -12,8 +12,15 @@ public class materialSelectorRow : UIMaterialManager
     {
         this.m = m;
         image.material = m;
-        button.onClick.AddListener(() => {
+        button.onClick.AddListener(() =>
+        {
             Debug.Log(m.name);
-            setMaterial(m); });
+            setMaterial(m);
+            foreach(Entity e in Entity.Entites[1])
+            {
+                e.material = m;
+            }
+        });
+
     }
 }

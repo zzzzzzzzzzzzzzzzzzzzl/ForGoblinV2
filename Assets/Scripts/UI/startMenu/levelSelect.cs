@@ -89,6 +89,7 @@ public class levelSelect : UIMaterialManager
     }
     void loadGame()
     {
+        cleanStaticData.clear();
         SceneManager.LoadScene("game");
     }
 }

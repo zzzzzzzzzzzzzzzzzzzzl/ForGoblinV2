@@ -2,20 +2,24 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: UnitColor
   m_Shader: {fileID: 4800000, guid: 2faed18866f09a842a0e584b577623ec, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -55,8 +59,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _BumpScale: 1
+    - _ColorMask: 15
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -71,6 +77,11 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
@@ -83,8 +94,8 @@ Material:
     - _ReplaceColourE: {r: 1, g: 1, b: 1, a: 1}
     - _ReplaceColouraaa: {r: 1, g: 1, b: 1, a: 1}
     - _ReplaceSkinColour: {r: 0, g: 0, b: 0, a: 1}
-    - _ReplaceSkinColour1: {r: 0.65851617, g: 0.6698113, b: 0.21800463, a: 1}
-    - _ReplaceSkinColour2: {r: 0.6320754, g: 0.20362826, b: 0.068574235, a: 1}
+    - _ReplaceSkinColour1: {r: 0.65833974, g: 0.6685022, b: 0.2789419, a: 1}
+    - _ReplaceSkinColour2: {r: 0.7090765, g: 0.35524866, b: 0.2416342, a: 1}
     - _ReplaceSkinColour3: {r: 0.4339623, g: 0.1333169, b: 0.06755074, a: 1}
     - _ReplaceSkinColour4: {r: 0.31174782, g: 0.38679248, b: 0.3046903, a: 1}
     - _ReplaceSkinColour5: {r: 0.3773585, g: 0.24645329, b: 0.12281951, a: 1}
@@ -104,3 +115,4 @@ Material:
     - _TargetSkinColour5: {r: 0.93725497, g: 0, b: 1, a: 1}
     - _TargetSkinColour6: {r: 0, g: 1, b: 0.8470589, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

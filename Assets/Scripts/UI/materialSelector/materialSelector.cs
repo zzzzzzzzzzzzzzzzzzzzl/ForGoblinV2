@@ -1,13 +1,13 @@
 using UnityEngine;
-using UnityEngine.UI;
 
-public class materialSelector : MonoBehaviour
+public class materialSelector : UIMaterialManager
 {
     public GameObject rowPrefab;
     public Transform layoutGroup;
 
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         foreach(Material m in ResourceLoader.materials.Values)
         {
             GameObject row = Instantiate(rowPrefab, layoutGroup);

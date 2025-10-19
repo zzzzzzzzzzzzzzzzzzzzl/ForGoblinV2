@@ -1,5 +1,6 @@
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Spawner : Entity
 {
@@ -32,5 +33,8 @@ public class Spawner : Entity
     protected override void die()
     {
         soundManager.instance.playSound(soundManager.instance.lose, 1);
+        cleanStaticData.clear();
+        SceneManager.LoadScene("startMenu");
+
     }
 }

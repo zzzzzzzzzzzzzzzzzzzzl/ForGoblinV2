@@ -15,19 +15,25 @@ public class UIMaterialManager : MonoBehaviour, IPointerEnterHandler, IPointerEx
     {
         material = m;
         updateOverlays();
-        foreach (Entity e in Entity.Entites[1])
-        {
-            e.material = m;
-        }
+
 
     }
-    bool init = false;
+   public static  bool init = false;
     void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData)
     {
+        if (UIPoint.point != null)
+        {
+            UIPoint.point.gameObject.SetActive(true);
+            UIPoint.point.transform.position = overlay.transform.position;
+            UIPoint.point.setSize(overlay.rectTransform.sizeDelta);
+        }
     }
     void IPointerExitHandler.OnPointerExit(PointerEventData eventData)
     {
-        overlay.material = null;
+        if (UIPoint.point != null)
+        {
+            UIPoint.point.gameObject.SetActive(false);
+        }
     }
     protected virtual void Awake()
     {
@@ -50,7 +56,7 @@ public class UIMaterialManager : MonoBehaviour, IPointerEnterHandler, IPointerEx
     {
         foreach (Image o in overlays)
         {
-            o.material = material;
+            // o.material = material;
         }
     }
 }
