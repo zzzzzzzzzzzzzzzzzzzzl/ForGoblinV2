@@ -78,25 +78,23 @@ public class Entity : MonoBehaviour
     }
     protected virtual void Start()
     {
-        try
+        // try
         {
-            if (entityType != "Imp")
+            if (entityType != "Imp" && entityType != "Mushroom")
             {
-                stats = new Dictionary<string, float>(unitData.unitStats[entityType]);
+                // stats = new Dictionary<string, float>(unitData.unitStats[entityType]);
+                stats = new(playerManager.playerManagers[team].playerData.Upgrades.getUnitStats(entityType));
+            }
+            if (entityType == "Mushroom")
+            {
+                stats=new(unitData.unitStats[entityType]);
             }
             health = stats["health"];
         }
-        catch
-        {
-            Debug.LogError($"{entityType} invalid key for unitStats ");
-        }
-
-
-        material = playerManager.playerManagers[team].material;
-
-        if (boxCollider == null) boxCollider = GetComponentInChildren<BoxCollider2D>();
-        if (boxCollider == null) boxCollider = GetComponent<BoxCollider2D>();
-        if (entityType == "spawner") Debug.Log(boxCollider);
+        // catch
+        // {
+        //     Debug.LogError($"{entityType} invalid key for unitStats ");
+        // }
 
         stateManager = gameObject.AddComponent<StateManager>();
         if (entityType != "Spawner") spriteRenderer.sortingOrder = UnityEngine.Random.Range(0, 10);

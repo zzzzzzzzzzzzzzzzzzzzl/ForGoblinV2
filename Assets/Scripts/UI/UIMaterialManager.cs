@@ -56,7 +56,7 @@ public class UIMaterialManager : MonoBehaviour, IPointerEnterHandler, IPointerEx
     {
         foreach (Image o in overlays)
         {
-            // o.material = material;
+            o.material = material;
         }
     }
 }

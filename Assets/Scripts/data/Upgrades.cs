@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Upgrades
@@ -168,5 +169,14 @@ public class Upgrades
   public int getCost(string unit, string stat)
   {
     return (int)baseCost * (upgradesPurchased[unit][stat] + 1);
+  }
+  public Dictionary<string, float> getUnitStats(string unit)
+  {
+    Dictionary<string, float> d = new(unitData.unitStats[unit]);
+    foreach (string key in d.Keys.Where(k=>k!="cost").ToList())
+    {
+      d[key] += increment[key](d[key], upgradesPurchased[unit][key]);
+    }
+    return d;
   }
 }

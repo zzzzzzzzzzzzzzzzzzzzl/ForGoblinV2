@@ -30,9 +30,13 @@ public class UpgradeUIRow : UIMaterialManager, IPointerEnterHandler, IPointerExi
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() =>
         {
-            if (playerData.makePurchase("crystalJuice", (int)playerData.Upgrades.getCost(unit, stat)))
+                Debug.Log("click");
+            if (playerData.makePurchase("crystal", playerData.Upgrades.getCost(unit, stat)))
             {
+                Debug.Log("purchased");
                 toolTipAppearOnHover.cost = playerData.Upgrades.getCost(unit, stat);
+                playerData.Upgrades.upgradesPurchased[unit][stat]++;
+                
                 setBar(unit, stat);
                 setIncrement(unit, stat);
                 setRow(unit, stat);
