@@ -127,7 +127,7 @@ public static class unitData
             {"health",60 },
             {"armour",0 },
             {"speed",1 },
-            { "forageRange",12},
+            { "range",6},
             { "capacity",4},
             { "cost",5},
             }
